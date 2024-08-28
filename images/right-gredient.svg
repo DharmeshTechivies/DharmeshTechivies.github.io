@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- License: Apache. Made by bytedance: https://github.com/bytedance/IconPark -->
+<svg width="38px" height="38px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="-0.745" x2="0.5" y2="2.128" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#54c0e8"/>
+      <stop offset="1" stop-color="#037cba"/>
+    </linearGradient>
+  </defs>
+<rect width="48" height="48" fill="white" fill-opacity="0.01"/>
+<path d="M31 36L19 24L31 12" stroke="url(#linear-gradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- License: MIT. Made by teenyicons: https://github.com/teenyicons/teenyicons -->
+<svg width="24px" height="24px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="-0.745" x2="0.5" y2="2.128" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#54c0e8"/>
+      <stop offset="1" stop-color="#037cba"/>
+    </linearGradient>
+  </defs>
+<path d="M0 2.5H15M3 7.5H12M5 12.5H10" stroke="url(#linear-gradient)"/>
+</svg>
