@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wordpress</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="./become-landlord.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png">
+        </div>
+        <div class="logo-content">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="images/toogle-icon.svg">
+                    </button> -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Property</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link landlord-text" href="#">Become a Landlord</a>
+                            </li>
+                            <li class="nav-item login-btn" data-bs-toggle="modal" data-bs-target="#signInmodal">
+                                <button class="btn primary-btn">Sign In</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="mobile-sidebar">
+                <div class="sidebar-container">
+                    <div class="toggle-icon" onclick="sidebarOpen()">
+                        <img src="images/toogle-icon.svg">
+                    </div>
+                    <div class="toggle-sidebar" id="sidebar-open" onclick="sidebarClose()">
+                        <div class="sidebar-contnet">
+                            <div class="logo-sidebar">
+                                <img src="images/logo.png">
+                            </div>
+                            <div class="sidebar-links">
+                                <ul>
+                                    <li>Property</li>
+                                    <li>About Us</li>
+                                    <li>Contact Us</li>
+                                </ul>
+                                <div class="bottom-btn">
+                                    <button class="btn primary-btn" data-bs-toggle="modal"
+                                        data-bs-target="#signInmodal">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Banner Section-->
+    <div class="banner-container">
+        <div class="common-page-space">
+            <div class="banner-inner">
+                <div class="banner-left">
+                    <h1 class="banner-heading">
+                        List your rental. Screen tenants.
+                        Sign a lease. Get paid.
+                    </h1>
+                    <p class="banner-text">
+                        All in one place with Prisma PROP TECH.
+                    </p>
+                    <button class="btn primary-btn list-btn">List your properties for free </button>
+                </div>
+                <div class="banner-right">
+                    <div class="banner-img">
+                        <img src="images/banner-img-lls.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Property Details Section-->
+    <section>
+        <div class="property-detail-container">
+            <div class="common-page-space">
+                <div class="detail-container">
+                    <div class="detail-card">
+                        <div class="detail-img">
+                            <img src="images/detail-img-1.png">
+                        </div>
+                        <label class="detail-heading">Fill vacancies and
+                            manage properties</label>
+                        <p class="detail-text">Landlording made simple,
+                            whether you have one rental or
+                            an entire portfolio.</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-img">
+                            <img src="images/detail-img-2.png">
+                        </div>
+                        <label class="detail-heading">Over 30 million
+                            visitors each month*</label>
+                        <p class="detail-text">List your property for free on
+                            Prisma, Trulia and HotPads to help
+                            you find your perfect renter.</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-img">
+                            <img src="images/detail-img-3.png">
+                        </div>
+                        <label class="detail-heading">A brand you
+                            can trust</label>
+                        <p class="detail-text">Landlord tools built by industry
+                            experts and the brand that
+                            knows real estate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Property features-->
+    <section>
+        <div class="property-features-container">
+            <div class="common-page-space">
+                <div class="section-heading">
+                    <h2 class="heading-text">It's easier than ever to be a landlord</h2>
+                    <p class="sub-text">Save time with our property management tools that help you get what you need —
+                        signed leases and rent payments.</p>
+                </div>
+                <div class="features-list-container">
+                    <div class="features-list">
+                        <div class="feature-content">
+                            <h2 class="feature-heading">Post your rental listing for free</h2>
+                            <p class="feature-text">
+                                Prisma Rental Manager's easy-to-use tools let you list your property where
+                                millions of renters search each month. Plus, messaging and tenant screening
+                                are integrated into our listing platform to help you find and screen
+                                applicants quickly.
+                            </p>
+                            <div class="feature-btns">
+                                <button class="btn primary-btn">Get Started</button>
+                                <a href="#" class="learn-more-text">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="feature-image">
+                            <img src="images/feature-img-1.png">
+                        </div>
+                    </div>
+                    <div class="features-list">
+                        <div class="feature-image">
+                            <img src="images/feature-img-2.png">
+                        </div>
+                        <div class="feature-content content-right">
+                            <h2 class="feature-heading">Screen tenants with online rental applications</h2>
+                            <p class="feature-text">
+                                Sign your next tenant with confidence using our online rental applications.
+                                Save time with credit reports, background checks, eviction history and
+                                income verification — all in one place.
+                            </p>
+                            <div class="feature-btns">
+                                <button class="btn primary-btn">Accept applications</button>
+                                <a href="#" class="learn-more-text">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features-list">
+                        <div class="feature-content">
+                            <h2 class="feature-heading">Sign a rental lease</h2>
+                            <p class="feature-text">
+                                Create your rental lease using our online lease builder and templates
+                                drafted with local law firms, or upload your own lease and e-sign it
+                                with your renters.
+                            </p>
+                            <div class="feature-btns">
+                                <button class="btn primary-btn">Create a Lease</button>
+                                <a href="#" class="learn-more-text">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="feature-image">
+                            <img src="images/feature-img-3.png">
+                        </div>
+                    </div>
+                    <div class="features-list">
+                        <div class="feature-image">
+                            <img src="images/feature-img-4.png">
+                        </div>
+                        <div class="feature-content content-right">
+                            <h2 class="feature-heading">Collect rent payments</h2>
+                            <p class="feature-text">
+                                The convenient way for landlords to get paid. Rent, utilities, move-in fees
+                                and more are deposited straight into your bank account —
+                                at no cost to you.
+                            </p>
+                            <div class="feature-btns">
+                                <button class="btn primary-btn">Get Paid</button>
+                                <a href="#" class="learn-more-text">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Premium listings Section-->
+    <section>
+        <div class="premium-listing-container">
+            <div class="common-page-space">
+                <div class="listing-container">
+                    <div class="listing-inner listing-left">
+                        <h4>Get the most from your listings
+                            with premium</h4>
+                        <p>For a one-time fee, you can upgrade your property to our premium listing experience —
+                            to help you manage your rental and fill vacancies fast.</p>
+                        <div class="listing-content">
+                            <label class="list-text">Increased exposure</label>
+                            <p>Get more eyes on your listing from renters searching in your area.</p>
+                        </div>
+                        <div class="listing-content">
+                            <label class="list-text">Pricing & market insights</label>
+                            <p>Track listing performance data and trends to price your rental competitively.</p>
+                        </div>
+                        <div class="listing-content">
+                            <label class="list-text">Listing recommendations</label>
+                            <p>Get customized tips to help your listing appeal to renters.</p>
+                        </div>
+                        <div class="listing-btn">
+                            <button class="btn primary-btn">Upgrade to Premium</button>
+                        </div>
+                    </div>
+                    <div class="listing-inner listing-right">
+                        <div class="listing-image">
+                            <img src="images/about-img.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Testimonial Section-->
+    <section>
+        <div class="testimonial-container">
+            <div class="fix-image">
+                <img src="images/quote-png.png">
+            </div>
+            <div class="common-page-space">
+                <div class="section-heading">
+                    <h2 class="heading-text">Customers Loves Us</h2>
+                </div>
+                <div class="testimonial-content">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="item-content">
+                                    <div class="item-image">
+                                        <div class="profime-img">
+                                            <img src="images/testimonial-1.png">
+                                        </div>
+                                        <div class="image-bg">
+                                            <img src="images/testimonial.png">
+                                        </div>
+                                    </div>
+                                    <div class="text-content">
+                                        <p class="profile-text">I recently sold a house through Liam Wyatt. While this
+                                            can be a very
+                                            stressful process,
+                                            I felt fully confident while dealing with Liam. He was candid, provided
+                                            honest feedback,
+                                            explained things clearly with details and managed the actual sale
+                                            negotiation brilliantly. I
+                                            highly recommend Liam's services to any one looking for real estate sale or
+                                            purchase.</p>
+                                        <div class="profile-name">
+                                            <label class="name-text">Martha Brown</label>
+                                            <span class="profile-tag">Writer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="item-content">
+                                    <div class="item-image">
+                                        <div class="profime-img">
+                                            <img src="images/profile-2.jpg">
+                                        </div>
+                                        <div class="image-bg">
+                                            <img src="images/testimonial.png">
+                                        </div>
+                                    </div>
+                                    <div class="text-content">
+                                        <p class="profile-text">I recently sold a house through Liam Wyatt. While this
+                                            can be a very
+                                            stressful process,
+                                            I felt fully confident while dealing with Liam. He was candid, provided
+                                            honest feedback,
+                                            explained things clearly with details and managed the actual sale
+                                            negotiation brilliantly. I
+                                            highly recommend Liam's services to any one looking for real estate sale or
+                                            purchase.</p>
+                                        <div class="profile-name">
+                                            <label class="name-text">John David</label>
+                                            <span class="profile-tag">Company Agent</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="item-content">
+                                    <div class="item-image">
+                                        <div class="profime-img">
+                                            <img src="images/profile-1.jpg">
+                                        </div>
+                                        <div class="image-bg">
+                                            <img src="images/testimonial.png">
+                                        </div>
+                                    </div>
+                                    <div class="text-content">
+                                        <p class="profile-text">I recently sold a house through Liam Wyatt. While this
+                                            can be a very
+                                            stressful process,
+                                            I felt fully confident while dealing with Liam. He was candid, provided
+                                            honest feedback,
+                                            explained things clearly with details and managed the actual sale
+                                            negotiation brilliantly. I
+                                            highly recommend Liam's services to any one looking for real estate sale or
+                                            purchase.</p>
+                                        <div class="profile-name">
+                                            <label class="name-text">Melissa William</label>
+                                            <span class="profile-tag">Agent</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true">
+                                <img src="images/right-gredient.svg">
+                            </span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true">
+                                <img src="images/left-gredient.svg">
+                            </span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-inner">
+                <div class="footer-content">
+                    <div class="footer-image">
+                        <img src="images/footer-logo.png">
+                    </div>
+                    <p>A contemporary theme we designed specifically for real estate and property showcase websites,
+                        equipped with every option, element and feature your site may need.</p>
+                </div>
+                <div class="footer-content">
+                    <div class="footer-links">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Property</a>
+                            </li>
+                            <li>
+                                <a href="#">About us</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="page-footer">
+                <div class="page-footer-content">
+                    <div class="left-text">
+                        <p>© 2024. All rights reserved</p>
+                    </div>
+                    <div class="follow-section">
+                        <span>Follow us:</span>
+                        <div class="follow-link">
+                            <ul>
+                                <li><a href="#">
+                                        <img src="images/facebook.svg" alt="">
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="images/linkedin.svg" alt="">
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="images/twitter.svg" alt="">
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="images/youtube.svg" alt="">
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function sidebarOpen() {
+            var element = document.getElementById("sidebar-open");
+            element.classList.add("show-sidebar");
+        }
+        function sidebarClose() {
+            var element = document.getElementById("sidebar-open");
+            element.classList.remove("show-sidebar");
+        }
+    </script>
+</body>
+
+</html>

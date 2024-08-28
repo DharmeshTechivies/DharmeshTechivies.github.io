@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wordpress</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="./Properties-list-.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png">
+        </div>
+        <div class="logo-content">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="images/toogle-icon.svg">
+                    </button> -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Property</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                            <li class="nav-item login-btn">
+                                <button class="btn primary-btn">Login</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="mobile-sidebar">
+                <div class="sidebar-container">
+                    <div class="toggle-icon" onclick="sidebarOpen()">
+                        <img src="images/toogle-icon.svg">
+                    </div>
+                    <div class="toggle-sidebar" id="sidebar-open" onclick="sidebarClose()">
+                        <div class="sidebar-contnet">
+                            <div class="logo-sidebar">
+                                <img src="images/logo.png">
+                            </div>
+                            <div class="sidebar-links">
+                                <ul>
+                                    <li>Property</li>
+                                    <li>About Us</li>
+                                    <li>Contact Us</li>
+                                </ul>
+                                <div class="bottom-btn">
+                                    <button class="btn primary-btn">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="body-content-container">
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d356933.8714888409!2d10.413661869378636!3d45.65994086120074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781eca8aec020b9%3A0x91dcf07c1c969bb8!2sGarda!5e0!3m2!1spl!2spl!4v1672244147501!5m2!1spl!2spl"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="property-list-container">
+                <div class="property-filter-container">
+                    <div class="filter-top">
+                        <div class="filter-search">
+                            <input type="search" placeholder="Address, neighborhood, city, ZIP">
+                            <span class="search-icon">
+                                <img src="images/icons8-search.png">
+                            </span>
+                        </div>
+                        <div class="filter-select">
+                            <select>
+                                <option>All Locations</option>
+                                <option>Coral Gables</option>
+                                <option>Doral</option>
+                                <option>Little Havana</option>
+                            </select>
+                            <div class="select-icon">
+                                <img src="images/down.png">
+                            </div>
+                        </div>
+                        <div class="filter-select">
+                            <select>
+                                <option>All Status</option>
+                                <option>For Rent</option>
+                                <option>For Sale</option>
+                            </select>
+                            <div class="select-icon">
+                                <img src="images/down.png">
+                            </div>
+                        </div>
+                        <div class="filter-select">
+                            <select>
+                                <option>All Types</option>
+                                <option>Apartment</option>
+                                <option>Apartment Building</option>
+                                <option>Office</option>
+                                <option>Shop</option>
+                            </select>
+                            <div class="select-icon">
+                                <img src="images/down.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-btns">
+                        <span class="filter-icon">
+                            <img src="images/filter-icon.png">
+                        </span>
+                        <button class="btn primary-btn">Save search</button>
+                    </div>
+                </div>
+                <div class="property-list-content">
+                    <div class="list-inner">
+                        <div class="property-list">
+                            <div class="property-image">
+                                <img src="./images/property-1.jpg">
+                            </div>
+                            <div class="property-content">
+                                <h4><a href="#"> Home in Merrick Way</a></h4>
+                                <div class="location-text">
+                                    <span>
+                                        <svg id="marker" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16.757" height="20"
+                                            viewBox="0 0 16.757 20">
+                                            <defs>
+                                                <linearGradient id="linear-gradient" x1="0.5" y1="-0.745" x2="0.5"
+                                                    y2="2.128" gradientUnits="objectBoundingBox">
+                                                    <stop offset="0" stop-color="#54c0e8" />
+                                                    <stop offset="1" stop-color="#037cba" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path id="Path_130" data-name="Path 130"
+                                                d="M11.333,6a3.333,3.333,0,1,0,3.333,3.333A3.333,3.333,0,0,0,11.333,6Zm0,5A1.667,1.667,0,1,1,13,9.333,1.667,1.667,0,0,1,11.333,11Z"
+                                                transform="translate(-2.955 -1.001)" fill="url(#linear-gradient)" />
+                                            <path id="Path_131" data-name="Path 131"
+                                                d="M10.323,20a4.392,4.392,0,0,1-3.592-1.833c-3.176-4.38-4.786-7.674-4.786-9.788a8.378,8.378,0,1,1,16.757,0c0,2.115-1.611,5.408-4.786,9.788A4.392,4.392,0,0,1,10.323,20Zm0-18.181A6.569,6.569,0,0,0,3.762,8.378c0,1.675,1.577,4.772,4.44,8.721a2.621,2.621,0,0,0,4.241,0c2.863-3.949,4.44-7.046,4.44-8.721a6.569,6.569,0,0,0-6.561-6.561Z"
+                                                transform="translate(-1.945 0)" fill="url(#linear-gradient)" />
+                                        </svg>
+                                    </span>
+                                    <label>Northwest 107th Avenue, Doral, FL 33178, USA</label>
+                                </div>
+                                <div class="property-footer">
+                                    <h2 class="prise-text">$8,000 - 50,000</h2>
+
+                                </div>
+                                <div class="property-feature">
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/rooms.svg">
+                                        </span>
+                                        <label>1-8</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/bath.svg">
+                                        </span>
+                                        <label>4-10</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/sq-feet.svg">
+                                        </span>
+                                        <label>500-1500 sq ft</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-list">
+                            <div class="property-image">
+                                <img src="./images/property-2.jpg">
+                            </div>
+                            <div class="property-content">
+                                <h4><a href="#"> Villa on Hollywood Boulevard</a></h4>
+                                <div class="location-text">
+                                    <span>
+                                        <svg id="marker" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16.757" height="20"
+                                            viewBox="0 0 16.757 20">
+                                            <defs>
+                                                <linearGradient id="linear-gradient" x1="0.5" y1="-0.745" x2="0.5"
+                                                    y2="2.128" gradientUnits="objectBoundingBox">
+                                                    <stop offset="0" stop-color="#54c0e8" />
+                                                    <stop offset="1" stop-color="#037cba" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path id="Path_130" data-name="Path 130"
+                                                d="M11.333,6a3.333,3.333,0,1,0,3.333,3.333A3.333,3.333,0,0,0,11.333,6Zm0,5A1.667,1.667,0,1,1,13,9.333,1.667,1.667,0,0,1,11.333,11Z"
+                                                transform="translate(-2.955 -1.001)" fill="url(#linear-gradient)" />
+                                            <path id="Path_131" data-name="Path 131"
+                                                d="M10.323,20a4.392,4.392,0,0,1-3.592-1.833c-3.176-4.38-4.786-7.674-4.786-9.788a8.378,8.378,0,1,1,16.757,0c0,2.115-1.611,5.408-4.786,9.788A4.392,4.392,0,0,1,10.323,20Zm0-18.181A6.569,6.569,0,0,0,3.762,8.378c0,1.675,1.577,4.772,4.44,8.721a2.621,2.621,0,0,0,4.241,0c2.863-3.949,4.44-7.046,4.44-8.721a6.569,6.569,0,0,0-6.561-6.561Z"
+                                                transform="translate(-1.945 0)" fill="url(#linear-gradient)" />
+                                        </svg>
+                                    </span>
+                                    <label>CocoWalk, 3015 Grand Avenue, Miami, USA</label>
+                                </div>
+                                <div class="property-footer">
+                                    <h2 class="prise-text">$2,500 - 5,500</h2>
+                                </div>
+                                <div class="property-feature">
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/rooms.svg">
+                                        </span>
+                                        <label>1-12</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/bath.svg">
+                                        </span>
+                                        <label>1-10</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/sq-feet.svg">
+                                        </span>
+                                        <label>500-1500 sq ft</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-list">
+                            <div class="property-image">
+                                <img src="./images/property-3.jpg">
+                            </div>
+                            <div class="property-content">
+                                <h4><a href="#"> Office Space at Northwest 107th</a></h4>
+                                <div class="location-text">
+                                    <span>
+                                        <svg id="marker" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16.757" height="20"
+                                            viewBox="0 0 16.757 20">
+                                            <defs>
+                                                <linearGradient id="linear-gradient" x1="0.5" y1="-0.745" x2="0.5"
+                                                    y2="2.128" gradientUnits="objectBoundingBox">
+                                                    <stop offset="0" stop-color="#54c0e8" />
+                                                    <stop offset="1" stop-color="#037cba" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path id="Path_130" data-name="Path 130"
+                                                d="M11.333,6a3.333,3.333,0,1,0,3.333,3.333A3.333,3.333,0,0,0,11.333,6Zm0,5A1.667,1.667,0,1,1,13,9.333,1.667,1.667,0,0,1,11.333,11Z"
+                                                transform="translate(-2.955 -1.001)" fill="url(#linear-gradient)" />
+                                            <path id="Path_131" data-name="Path 131"
+                                                d="M10.323,20a4.392,4.392,0,0,1-3.592-1.833c-3.176-4.38-4.786-7.674-4.786-9.788a8.378,8.378,0,1,1,16.757,0c0,2.115-1.611,5.408-4.786,9.788A4.392,4.392,0,0,1,10.323,20Zm0-18.181A6.569,6.569,0,0,0,3.762,8.378c0,1.675,1.577,4.772,4.44,8.721a2.621,2.621,0,0,0,4.241,0c2.863-3.949,4.44-7.046,4.44-8.721a6.569,6.569,0,0,0-6.561-6.561Z"
+                                                transform="translate(-1.945 0)" fill="url(#linear-gradient)" />
+                                        </svg>
+                                    </span>
+                                    <label>Merrick Way, Miami, FL 33134, USA</label>
+                                </div>
+                                <div class="property-footer">
+                                    <h2 class="prise-text">$3,100 - 5,500</h2>
+                                </div>
+                                <div class="property-feature">
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/rooms.svg">
+                                        </span>
+                                        <label>0-8</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/bath.svg">
+                                        </span>
+                                        <label>1-10</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/sq-feet.svg">
+                                        </span>
+                                        <label>500-1500 sq ft</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-list">
+                            <div class="property-image">
+                                <img src="./images/property-4.jpg">
+                            </div>
+                            <div class="property-content">
+                                <h4><a href="#"> South Sun House</a></h4>
+                                <div class="location-text">
+                                    <span>
+                                        <svg id="marker" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16.757" height="20"
+                                            viewBox="0 0 16.757 20">
+                                            <defs>
+                                                <linearGradient id="linear-gradient" x1="0.5" y1="-0.745" x2="0.5"
+                                                    y2="2.128" gradientUnits="objectBoundingBox">
+                                                    <stop offset="0" stop-color="#54c0e8" />
+                                                    <stop offset="1" stop-color="#037cba" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path id="Path_130" data-name="Path 130"
+                                                d="M11.333,6a3.333,3.333,0,1,0,3.333,3.333A3.333,3.333,0,0,0,11.333,6Zm0,5A1.667,1.667,0,1,1,13,9.333,1.667,1.667,0,0,1,11.333,11Z"
+                                                transform="translate(-2.955 -1.001)" fill="url(#linear-gradient)" />
+                                            <path id="Path_131" data-name="Path 131"
+                                                d="M10.323,20a4.392,4.392,0,0,1-3.592-1.833c-3.176-4.38-4.786-7.674-4.786-9.788a8.378,8.378,0,1,1,16.757,0c0,2.115-1.611,5.408-4.786,9.788A4.392,4.392,0,0,1,10.323,20Zm0-18.181A6.569,6.569,0,0,0,3.762,8.378c0,1.675,1.577,4.772,4.44,8.721a2.621,2.621,0,0,0,4.241,0c2.863-3.949,4.44-7.046,4.44-8.721a6.569,6.569,0,0,0-6.561-6.561Z"
+                                                transform="translate(-1.945 0)" fill="url(#linear-gradient)" />
+                                        </svg>
+                                    </span>
+                                    <label>Northwest 107th Avenue, Doral, FL 33178, USA</label>
+                                </div>
+                                <div class="property-footer">
+                                    <h2 class="prise-text">$13,100 - 15,500</h2>
+                                </div>
+                                <div class="property-feature">
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/rooms.svg">
+                                        </span>
+                                        <label>1-8</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/bath.svg">
+                                        </span>
+                                        <label>4-10</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/sq-feet.svg">
+                                        </span>
+                                        <label>500-1500 sq ft</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-list">
+                            <div class="property-image">
+                                <img src="./images/property-5.jpg">
+                            </div>
+                            <div class="property-content">
+                                <h4><a href="#">Mountain Cabin</a></h4>
+                                <div class="location-text">
+                                    <span>
+                                        <svg id="marker" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16.757" height="20"
+                                            viewBox="0 0 16.757 20">
+                                            <defs>
+                                                <linearGradient id="linear-gradient" x1="0.5" y1="-0.745" x2="0.5"
+                                                    y2="2.128" gradientUnits="objectBoundingBox">
+                                                    <stop offset="0" stop-color="#54c0e8" />
+                                                    <stop offset="1" stop-color="#037cba" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path id="Path_130" data-name="Path 130"
+                                                d="M11.333,6a3.333,3.333,0,1,0,3.333,3.333A3.333,3.333,0,0,0,11.333,6Zm0,5A1.667,1.667,0,1,1,13,9.333,1.667,1.667,0,0,1,11.333,11Z"
+                                                transform="translate(-2.955 -1.001)" fill="url(#linear-gradient)" />
+                                            <path id="Path_131" data-name="Path 131"
+                                                d="M10.323,20a4.392,4.392,0,0,1-3.592-1.833c-3.176-4.38-4.786-7.674-4.786-9.788a8.378,8.378,0,1,1,16.757,0c0,2.115-1.611,5.408-4.786,9.788A4.392,4.392,0,0,1,10.323,20Zm0-18.181A6.569,6.569,0,0,0,3.762,8.378c0,1.675,1.577,4.772,4.44,8.721a2.621,2.621,0,0,0,4.241,0c2.863-3.949,4.44-7.046,4.44-8.721a6.569,6.569,0,0,0-6.561-6.561Z"
+                                                transform="translate(-1.945 0)" fill="url(#linear-gradient)" />
+                                        </svg>
+                                    </span>
+                                    <label>CocoWalk, 3015 Grand Avenue, Miami, USA</label>
+                                </div>
+                                <div class="property-footer">
+                                    <h2 class="prise-text">$9,500 - 15,500 </h2>
+                                </div>
+                                <div class="property-feature">
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/rooms.svg">
+                                        </span>
+                                        <label>1-12</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/bath.svg">
+                                        </span>
+                                        <label>1-10</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/sq-feet.svg">
+                                        </span>
+                                        <label>500-1500 sq ft</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-list">
+                            <div class="property-image">
+                                <img src="images/property-6.jpg">
+                            </div>
+                            <div class="property-content">
+                                <h4><a href="#">Pine Forest Bungalow</a></h4>
+                                <div class="location-text">
+                                    <span>
+                                        <svg id="marker" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16.757" height="20"
+                                            viewBox="0 0 16.757 20">
+                                            <defs>
+                                                <linearGradient id="linear-gradient" x1="0.5" y1="-0.745" x2="0.5"
+                                                    y2="2.128" gradientUnits="objectBoundingBox">
+                                                    <stop offset="0" stop-color="#54c0e8" />
+                                                    <stop offset="1" stop-color="#037cba" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path id="Path_130" data-name="Path 130"
+                                                d="M11.333,6a3.333,3.333,0,1,0,3.333,3.333A3.333,3.333,0,0,0,11.333,6Zm0,5A1.667,1.667,0,1,1,13,9.333,1.667,1.667,0,0,1,11.333,11Z"
+                                                transform="translate(-2.955 -1.001)" fill="url(#linear-gradient)" />
+                                            <path id="Path_131" data-name="Path 131"
+                                                d="M10.323,20a4.392,4.392,0,0,1-3.592-1.833c-3.176-4.38-4.786-7.674-4.786-9.788a8.378,8.378,0,1,1,16.757,0c0,2.115-1.611,5.408-4.786,9.788A4.392,4.392,0,0,1,10.323,20Zm0-18.181A6.569,6.569,0,0,0,3.762,8.378c0,1.675,1.577,4.772,4.44,8.721a2.621,2.621,0,0,0,4.241,0c2.863-3.949,4.44-7.046,4.44-8.721a6.569,6.569,0,0,0-6.561-6.561Z"
+                                                transform="translate(-1.945 0)" fill="url(#linear-gradient)" />
+                                        </svg>
+                                    </span>
+                                    <label>Merrick Way, Miami, FL 33134, USA</label>
+                                </div>
+                                <div class="property-footer">
+                                    <h2 class="prise-text">$1,300 - 10,500 </h2>
+                                </div>
+                                <div class="property-feature">
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/rooms.svg">
+                                        </span>
+                                        <label>0-8</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/bath.svg">
+                                        </span>
+                                        <label>1-10</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/sq-feet.svg">
+                                        </span>
+                                        <label>500-1500 sq ft</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-list">
+                            <div class="property-image">
+                                <img src="images/property-6.jpg">
+                            </div>
+                            <div class="property-content">
+                                <h4><a href="#">Avenue Apartment</a></h4>
+                                <div class="location-text">
+                                    <span>
+                                        <svg id="marker" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16.757" height="20"
+                                            viewBox="0 0 16.757 20">
+                                            <defs>
+                                                <linearGradient id="linear-gradient" x1="0.5" y1="-0.745" x2="0.5"
+                                                    y2="2.128" gradientUnits="objectBoundingBox">
+                                                    <stop offset="0" stop-color="#54c0e8" />
+                                                    <stop offset="1" stop-color="#037cba" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path id="Path_130" data-name="Path 130"
+                                                d="M11.333,6a3.333,3.333,0,1,0,3.333,3.333A3.333,3.333,0,0,0,11.333,6Zm0,5A1.667,1.667,0,1,1,13,9.333,1.667,1.667,0,0,1,11.333,11Z"
+                                                transform="translate(-2.955 -1.001)" fill="url(#linear-gradient)" />
+                                            <path id="Path_131" data-name="Path 131"
+                                                d="M10.323,20a4.392,4.392,0,0,1-3.592-1.833c-3.176-4.38-4.786-7.674-4.786-9.788a8.378,8.378,0,1,1,16.757,0c0,2.115-1.611,5.408-4.786,9.788A4.392,4.392,0,0,1,10.323,20Zm0-18.181A6.569,6.569,0,0,0,3.762,8.378c0,1.675,1.577,4.772,4.44,8.721a2.621,2.621,0,0,0,4.241,0c2.863-3.949,4.44-7.046,4.44-8.721a6.569,6.569,0,0,0-6.561-6.561Z"
+                                                transform="translate(-1.945 0)" fill="url(#linear-gradient)" />
+                                        </svg>
+                                    </span>
+                                    <label>Merrick Way, Miami, FL 33134, USA</label>
+                                </div>
+                                <div class="property-footer">
+                                    <h2 class="prise-text">$1,300 - 10,500 </h2>
+                                </div>
+                                <div class="property-feature">
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/rooms.svg">
+                                        </span>
+                                        <label>0-8</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/bath.svg">
+                                        </span>
+                                        <label>1-10</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/sq-feet.svg">
+                                        </span>
+                                        <label>500-1500 sq ft</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-list">
+                            <div class="property-image">
+                                <img src="./images/property-1.jpg">
+                            </div>
+                            <div class="property-content">
+                                <h4><a href="#"> Home in Merrick Way</a></h4>
+                                <div class="location-text">
+                                    <span>
+                                        <svg id="marker" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16.757" height="20"
+                                            viewBox="0 0 16.757 20">
+                                            <defs>
+                                                <linearGradient id="linear-gradient" x1="0.5" y1="-0.745" x2="0.5"
+                                                    y2="2.128" gradientUnits="objectBoundingBox">
+                                                    <stop offset="0" stop-color="#54c0e8" />
+                                                    <stop offset="1" stop-color="#037cba" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path id="Path_130" data-name="Path 130"
+                                                d="M11.333,6a3.333,3.333,0,1,0,3.333,3.333A3.333,3.333,0,0,0,11.333,6Zm0,5A1.667,1.667,0,1,1,13,9.333,1.667,1.667,0,0,1,11.333,11Z"
+                                                transform="translate(-2.955 -1.001)" fill="url(#linear-gradient)" />
+                                            <path id="Path_131" data-name="Path 131"
+                                                d="M10.323,20a4.392,4.392,0,0,1-3.592-1.833c-3.176-4.38-4.786-7.674-4.786-9.788a8.378,8.378,0,1,1,16.757,0c0,2.115-1.611,5.408-4.786,9.788A4.392,4.392,0,0,1,10.323,20Zm0-18.181A6.569,6.569,0,0,0,3.762,8.378c0,1.675,1.577,4.772,4.44,8.721a2.621,2.621,0,0,0,4.241,0c2.863-3.949,4.44-7.046,4.44-8.721a6.569,6.569,0,0,0-6.561-6.561Z"
+                                                transform="translate(-1.945 0)" fill="url(#linear-gradient)" />
+                                        </svg>
+                                    </span>
+                                    <label>Northwest 107th Avenue, Doral, FL 33178, USA</label>
+                                </div>
+                                <div class="property-footer">
+                                    <h2 class="prise-text">$8,000 - 50,000</h2>
+
+                                </div>
+                                <div class="property-feature">
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/rooms.svg">
+                                        </span>
+                                        <label>1-8</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/bath.svg">
+                                        </span>
+                                        <label>4-10</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/sq-feet.svg">
+                                        </span>
+                                        <label>500-1500 sq ft</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-list">
+                            <div class="property-image">
+                                <img src="./images/property-2.jpg">
+                            </div>
+                            <div class="property-content">
+                                <h4><a href="#"> Villa on Hollywood Boulevard</a></h4>
+                                <div class="location-text">
+                                    <span>
+                                        <svg id="marker" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16.757" height="20"
+                                            viewBox="0 0 16.757 20">
+                                            <defs>
+                                                <linearGradient id="linear-gradient" x1="0.5" y1="-0.745" x2="0.5"
+                                                    y2="2.128" gradientUnits="objectBoundingBox">
+                                                    <stop offset="0" stop-color="#54c0e8" />
+                                                    <stop offset="1" stop-color="#037cba" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path id="Path_130" data-name="Path 130"
+                                                d="M11.333,6a3.333,3.333,0,1,0,3.333,3.333A3.333,3.333,0,0,0,11.333,6Zm0,5A1.667,1.667,0,1,1,13,9.333,1.667,1.667,0,0,1,11.333,11Z"
+                                                transform="translate(-2.955 -1.001)" fill="url(#linear-gradient)" />
+                                            <path id="Path_131" data-name="Path 131"
+                                                d="M10.323,20a4.392,4.392,0,0,1-3.592-1.833c-3.176-4.38-4.786-7.674-4.786-9.788a8.378,8.378,0,1,1,16.757,0c0,2.115-1.611,5.408-4.786,9.788A4.392,4.392,0,0,1,10.323,20Zm0-18.181A6.569,6.569,0,0,0,3.762,8.378c0,1.675,1.577,4.772,4.44,8.721a2.621,2.621,0,0,0,4.241,0c2.863-3.949,4.44-7.046,4.44-8.721a6.569,6.569,0,0,0-6.561-6.561Z"
+                                                transform="translate(-1.945 0)" fill="url(#linear-gradient)" />
+                                        </svg>
+                                    </span>
+                                    <label>CocoWalk, 3015 Grand Avenue, Miami, USA</label>
+                                </div>
+                                <div class="property-footer">
+                                    <h2 class="prise-text">$2,500 - 5,500</h2>
+                                </div>
+                                <div class="property-feature">
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/rooms.svg">
+                                        </span>
+                                        <label>1-12</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/bath.svg">
+                                        </span>
+                                        <label>1-10</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/sq-feet.svg">
+                                        </span>
+                                        <label>500-1500 sq ft</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-list">
+                            <div class="property-image">
+                                <img src="./images/property-3.jpg">
+                            </div>
+                            <div class="property-content">
+                                <h4><a href="#"> Office Space at Northwest 107th</a></h4>
+                                <div class="location-text">
+                                    <span>
+                                        <svg id="marker" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16.757" height="20"
+                                            viewBox="0 0 16.757 20">
+                                            <defs>
+                                                <linearGradient id="linear-gradient" x1="0.5" y1="-0.745" x2="0.5"
+                                                    y2="2.128" gradientUnits="objectBoundingBox">
+                                                    <stop offset="0" stop-color="#54c0e8" />
+                                                    <stop offset="1" stop-color="#037cba" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path id="Path_130" data-name="Path 130"
+                                                d="M11.333,6a3.333,3.333,0,1,0,3.333,3.333A3.333,3.333,0,0,0,11.333,6Zm0,5A1.667,1.667,0,1,1,13,9.333,1.667,1.667,0,0,1,11.333,11Z"
+                                                transform="translate(-2.955 -1.001)" fill="url(#linear-gradient)" />
+                                            <path id="Path_131" data-name="Path 131"
+                                                d="M10.323,20a4.392,4.392,0,0,1-3.592-1.833c-3.176-4.38-4.786-7.674-4.786-9.788a8.378,8.378,0,1,1,16.757,0c0,2.115-1.611,5.408-4.786,9.788A4.392,4.392,0,0,1,10.323,20Zm0-18.181A6.569,6.569,0,0,0,3.762,8.378c0,1.675,1.577,4.772,4.44,8.721a2.621,2.621,0,0,0,4.241,0c2.863-3.949,4.44-7.046,4.44-8.721a6.569,6.569,0,0,0-6.561-6.561Z"
+                                                transform="translate(-1.945 0)" fill="url(#linear-gradient)" />
+                                        </svg>
+                                    </span>
+                                    <label>Merrick Way, Miami, FL 33134, USA</label>
+                                </div>
+                                <div class="property-footer">
+                                    <h2 class="prise-text">$3,100 - 5,500</h2>
+                                </div>
+                                <div class="property-feature">
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/rooms.svg">
+                                        </span>
+                                        <label>0-8</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/bath.svg">
+                                        </span>
+                                        <label>1-10</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/sq-feet.svg">
+                                        </span>
+                                        <label>500-1500 sq ft</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-list">
+                            <div class="property-image">
+                                <img src="./images/property-4.jpg">
+                            </div>
+                            <div class="property-content">
+                                <h4><a href="#"> South Sun House</a></h4>
+                                <div class="location-text">
+                                    <span>
+                                        <svg id="marker" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16.757" height="20"
+                                            viewBox="0 0 16.757 20">
+                                            <defs>
+                                                <linearGradient id="linear-gradient" x1="0.5" y1="-0.745" x2="0.5"
+                                                    y2="2.128" gradientUnits="objectBoundingBox">
+                                                    <stop offset="0" stop-color="#54c0e8" />
+                                                    <stop offset="1" stop-color="#037cba" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path id="Path_130" data-name="Path 130"
+                                                d="M11.333,6a3.333,3.333,0,1,0,3.333,3.333A3.333,3.333,0,0,0,11.333,6Zm0,5A1.667,1.667,0,1,1,13,9.333,1.667,1.667,0,0,1,11.333,11Z"
+                                                transform="translate(-2.955 -1.001)" fill="url(#linear-gradient)" />
+                                            <path id="Path_131" data-name="Path 131"
+                                                d="M10.323,20a4.392,4.392,0,0,1-3.592-1.833c-3.176-4.38-4.786-7.674-4.786-9.788a8.378,8.378,0,1,1,16.757,0c0,2.115-1.611,5.408-4.786,9.788A4.392,4.392,0,0,1,10.323,20Zm0-18.181A6.569,6.569,0,0,0,3.762,8.378c0,1.675,1.577,4.772,4.44,8.721a2.621,2.621,0,0,0,4.241,0c2.863-3.949,4.44-7.046,4.44-8.721a6.569,6.569,0,0,0-6.561-6.561Z"
+                                                transform="translate(-1.945 0)" fill="url(#linear-gradient)" />
+                                        </svg>
+                                    </span>
+                                    <label>Northwest 107th Avenue, Doral, FL 33178, USA</label>
+                                </div>
+                                <div class="property-footer">
+                                    <h2 class="prise-text">$13,100 - 15,500</h2>
+                                </div>
+                                <div class="property-feature">
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/rooms.svg">
+                                        </span>
+                                        <label>1-8</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/bath.svg">
+                                        </span>
+                                        <label>4-10</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/sq-feet.svg">
+                                        </span>
+                                        <label>500-1500 sq ft</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-list">
+                            <div class="property-image">
+                                <img src="./images/property-5.jpg">
+                            </div>
+                            <div class="property-content">
+                                <h4><a href="#">Mountain Cabin</a></h4>
+                                <div class="location-text">
+                                    <span>
+                                        <svg id="marker" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16.757" height="20"
+                                            viewBox="0 0 16.757 20">
+                                            <defs>
+                                                <linearGradient id="linear-gradient" x1="0.5" y1="-0.745" x2="0.5"
+                                                    y2="2.128" gradientUnits="objectBoundingBox">
+                                                    <stop offset="0" stop-color="#54c0e8" />
+                                                    <stop offset="1" stop-color="#037cba" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path id="Path_130" data-name="Path 130"
+                                                d="M11.333,6a3.333,3.333,0,1,0,3.333,3.333A3.333,3.333,0,0,0,11.333,6Zm0,5A1.667,1.667,0,1,1,13,9.333,1.667,1.667,0,0,1,11.333,11Z"
+                                                transform="translate(-2.955 -1.001)" fill="url(#linear-gradient)" />
+                                            <path id="Path_131" data-name="Path 131"
+                                                d="M10.323,20a4.392,4.392,0,0,1-3.592-1.833c-3.176-4.38-4.786-7.674-4.786-9.788a8.378,8.378,0,1,1,16.757,0c0,2.115-1.611,5.408-4.786,9.788A4.392,4.392,0,0,1,10.323,20Zm0-18.181A6.569,6.569,0,0,0,3.762,8.378c0,1.675,1.577,4.772,4.44,8.721a2.621,2.621,0,0,0,4.241,0c2.863-3.949,4.44-7.046,4.44-8.721a6.569,6.569,0,0,0-6.561-6.561Z"
+                                                transform="translate(-1.945 0)" fill="url(#linear-gradient)" />
+                                        </svg>
+                                    </span>
+                                    <label>CocoWalk, 3015 Grand Avenue, Miami, USA</label>
+                                </div>
+                                <div class="property-footer">
+                                    <h2 class="prise-text">$9,500 - 15,500 </h2>
+                                </div>
+                                <div class="property-feature">
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/rooms.svg">
+                                        </span>
+                                        <label>1-12</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/bath.svg">
+                                        </span>
+                                        <label>1-10</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/sq-feet.svg">
+                                        </span>
+                                        <label>500-1500 sq ft</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-list">
+                            <div class="property-image">
+                                <img src="images/property-6.jpg">
+                            </div>
+                            <div class="property-content">
+                                <h4><a href="#">Pine Forest Bungalow</a></h4>
+                                <div class="location-text">
+                                    <span>
+                                        <svg id="marker" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16.757" height="20"
+                                            viewBox="0 0 16.757 20">
+                                            <defs>
+                                                <linearGradient id="linear-gradient" x1="0.5" y1="-0.745" x2="0.5"
+                                                    y2="2.128" gradientUnits="objectBoundingBox">
+                                                    <stop offset="0" stop-color="#54c0e8" />
+                                                    <stop offset="1" stop-color="#037cba" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path id="Path_130" data-name="Path 130"
+                                                d="M11.333,6a3.333,3.333,0,1,0,3.333,3.333A3.333,3.333,0,0,0,11.333,6Zm0,5A1.667,1.667,0,1,1,13,9.333,1.667,1.667,0,0,1,11.333,11Z"
+                                                transform="translate(-2.955 -1.001)" fill="url(#linear-gradient)" />
+                                            <path id="Path_131" data-name="Path 131"
+                                                d="M10.323,20a4.392,4.392,0,0,1-3.592-1.833c-3.176-4.38-4.786-7.674-4.786-9.788a8.378,8.378,0,1,1,16.757,0c0,2.115-1.611,5.408-4.786,9.788A4.392,4.392,0,0,1,10.323,20Zm0-18.181A6.569,6.569,0,0,0,3.762,8.378c0,1.675,1.577,4.772,4.44,8.721a2.621,2.621,0,0,0,4.241,0c2.863-3.949,4.44-7.046,4.44-8.721a6.569,6.569,0,0,0-6.561-6.561Z"
+                                                transform="translate(-1.945 0)" fill="url(#linear-gradient)" />
+                                        </svg>
+                                    </span>
+                                    <label>Merrick Way, Miami, FL 33134, USA</label>
+                                </div>
+                                <div class="property-footer">
+                                    <h2 class="prise-text">$1,300 - 10,500 </h2>
+                                </div>
+                                <div class="property-feature">
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/rooms.svg">
+                                        </span>
+                                        <label>0-8</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/bath.svg">
+                                        </span>
+                                        <label>1-10</label>
+                                    </div>
+                                    <div class="property-info">
+                                        <span>
+                                            <img src="images/sq-feet.svg">
+                                        </span>
+                                        <label>500-1500 sq ft</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property-btn">
+                        <nav>
+                            <ul class="pagination pagination-lg">
+                                <li class="page-item active" aria-current="page">
+                                    <span class="page-link">1</span>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-inner">
+                <div class="footer-content">
+                    <div class="footer-image">
+                        <img src="images/footer-logo.png">
+                    </div>
+                    <p>A contemporary theme we designed specifically for real estate and property showcase websites,
+                        equipped with every option, element and feature your site may need.</p>
+                </div>
+                <div class="footer-content">
+                    <div class="footer-links">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Property</a>
+                            </li>
+                            <li>
+                                <a href="#">About us</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="page-footer">
+                <div class="page-footer-content">
+                    <div class="left-text">
+                        <p>© 2024. All rights reserved</p>
+                    </div>
+                    <div class="follow-section">
+                        <span>Follow us:</span>
+                        <div class="follow-link">
+                            <ul>
+                                <li><a href="#">
+                                        <img src="images/facebook.svg" alt="">
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="images/linkedin.svg" alt="">
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="images/twitter.svg" alt="">
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="images/youtube.svg" alt="">
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function sidebarOpen() {
+            var element = document.getElementById("sidebar-open");
+            element.classList.add("show-sidebar");
+        }
+        function sidebarClose() {
+            var element = document.getElementById("sidebar-open");
+            element.classList.remove("show-sidebar");
+        }
+    </script>
+</body>
+
+</html>
