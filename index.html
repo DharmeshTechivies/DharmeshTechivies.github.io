@@ -43,16 +43,16 @@
                                 <a class="nav-link active" aria-current="page"
                                     href="./properties-list.html">Property</a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" href="#">About Us</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contact Us</a>
-                            </li>
+                            </li> -->
                             <li class="nav-item">
                                 <a class="nav-link landlord-text" href="./become-landlord.html">Become a Landlord</a>
                             </li>
-                            <li class="nav-item login-btn"  data-bs-toggle="modal" data-bs-target="#signInmodal">
+                            <li class="nav-item login-btn" data-bs-toggle="modal" data-bs-target="#signInmodal">
                                 <button class="btn primary-btn">Sign In</button>
                             </li>
                         </ul>
@@ -726,7 +726,7 @@
                             <div class="form-checkbox">
                                 <input class="checkbox-field" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="checkbox-label" for="flexCheckDefault">
-                                    Remember for 30 days
+                                    I am a landlord
                                 </label>
                             </div>
                             <span class="forgot-password-text">Forgot password?</span>
@@ -776,77 +776,43 @@
                     <div class="form-container">
                         <div class="form-row">
                             <div class="form-group">
-                                <label class="form-heading">Email Address</label>
+                                <label class="form-heading">First Name*</label>
+                                <div class="form-input">
+                                    <input type="text" class="input-field" placeholder="First Name*" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-heading">Last Name*</label>
+                                <div class="form-input">
+                                    <input type="text" class="input-field" placeholder="Last Name*" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-heading">Email Address*</label>
                                 <div class="form-input">
                                     <input type="text" class="input-field" placeholder="Enter Email*" />
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label class="form-heading">Password</label>
+                            <!-- <div class="form-group">
+                                <label class="form-heading">Password*</label>
                                 <div class="form-input">
                                     <input type="password" class="input-field" placeholder="Create Password*" />
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="checkbox-container">
                             <div class="form-checkbox">
                                 <input class="checkbox-field" type="checkbox" value="" id="flexCheckDefault1">
                                 <label class="checkbox-label" for="flexCheckDefault1">
-                                    I am a landlord or industry professional
+                                    I am a landlord
                                 </label>
                             </div>
                         </div>
-                        <div class="professional-information-container">
-                            <h2 class="professional-text">Professional Information</h2>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label class="form-heading">Professional type</label>
-                                    <div class="filter-select">
-                                        <select>
-                                            <option>Select your category</option>
-                                            <option>Real Estate Agent/Broker</option>
-                                            <option>Mortgage Lender</option>
-                                            <option>Home Improvement Services</option>
-                                            <option>Landlord</option>
-                                            <option>Photographer</option>
-                                        </select>
-                                        <div class="select-icon">
-                                            <img src="images/down.png">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label class="form-heading">First Name</label>
-                                    <div class="form-input">
-                                        <input type="text" class="input-field" placeholder="First Name" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-heading">Last Name</label>
-                                    <div class="form-input">
-                                        <input type="text" class="input-field" placeholder="Last Name" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label class="form-heading">Zip/Postal</label>
-                                    <div class="form-input">
-                                        <input type="text" class="input-field" placeholder="Zip/Postal" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-heading">Phone number</label>
-                                    <div class="form-input">
-                                        <input type="tel" class="input-field" placeholder="Phone number" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="signup-btn">
-                            <button class="btn primary-btn" data-bs-toggle="modal" data-bs-target="#signUpFormModal">Continue</button>
+                            <button class="btn primary-btn" data-bs-toggle="modal"
+                                data-bs-target="#signUpFormModal">Continue</button>
                         </div>
                         <div class="footer-section">
                             <div class="connect-with-container">
@@ -968,6 +934,134 @@
                                     <label class="form-heading">Mobile Number*</label>
                                     <div class="form-input">
                                         <input type="text" class="input-field" placeholder="Mobile Number*" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="property-detail" style="display: none;">
+                                <div class="form-inner">
+                                    <div class="form-group w-100">
+                                        <label class="form-heading">Property Name</label>
+                                        <div class="form-input">
+                                            <input type="text" class="input-field" placeholder="Property Name" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-heading">Address Line 1*</label>
+                                        <div class="form-input">
+                                            <input type="text" class="input-field" placeholder="Address Line 1*" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-heading">Address Line 2*</label>
+                                        <div class="form-input">
+                                            <input type="text" class="input-field" placeholder="Address Line 2*" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-heading">City*</label>
+                                        <div class="form-input">
+                                            <input type="text" class="input-field" placeholder="City*" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-heading">State*</label>
+                                        <div class="filter-select">
+                                            <select>
+                                                <option>Alabama</option>
+                                                <option>Louisiana</option>
+                                                <option>Alaska</option>
+                                                <option>Arizona</option>
+                                                <option>California</option>
+                                                <option>Hawaii</option>
+                                            </select>
+                                            <div class="select-icon">
+                                                <img src="images/down.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-heading">Zip Code*</label>
+                                        <div class="form-input">
+                                            <input type="text" class="input-field" placeholder="Zip Code*" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-group-checkbox">
+                                        <div class="form-checkbox">
+                                            <input class="checkbox-field" type="checkbox" value="" id="multipleUnits">
+                                            <label class="checkbox-label" for="multipleUnits">
+                                                This Property Has Multiple Units
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="delete-btn">
+                                        <img src="images/delete.png">
+                                    </div>
+                                </div>
+                                <div class="add-btn">
+                                    <button class="btn primary-btn">Add Property</button>
+                                </div>
+                            </div>
+                            <div class="unit-details" style="display: none;">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                Community rooms
+                                            </button>
+                                        </div>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <ul>
+                                                    <li>Bocce court</li>
+                                                    <li>Multi-Purpose sports court</li>
+                                                    <li>Other sports court</li>
+                                                    <li>Volleyball court</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Fitness & sports
+                                            </button>
+                                        </div>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <ul>
+                                                    <li>Bocce court</li>
+                                                    <li>Multi-Purpose sports court</li>
+                                                    <li>Other sports court</li>
+                                                    <li>Volleyball court</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                Services & facilities
+                                            </button>
+                                        </div>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <ul>
+                                                    <li>Bocce court</li>
+                                                    <li>Multi-Purpose sports court</li>
+                                                    <li>Other sports court</li>
+                                                    <li>Volleyball court</li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
