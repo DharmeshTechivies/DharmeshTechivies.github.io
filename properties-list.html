@@ -1107,79 +1107,81 @@
                             </div>
                         </div>
                         <div class="form-container">
-                            <div class="form-inner">
-                                <div class="form-group">
-                                    <label class="form-heading">First Name*</label>
-                                    <div class="form-input">
-                                        <input type="text" class="input-field" placeholder="First Name*" />
+                            <div id="BasicDetails" class="basic-details">
+                                <div class="form-inner">
+                                    <div class="form-group">
+                                        <label class="form-heading">First Name*</label>
+                                        <div class="form-input">
+                                            <input type="text" class="input-field" placeholder="First Name*" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-heading">Last Name*</label>
-                                    <div class="form-input">
-                                        <input type="text" class="input-field" placeholder="Last Name*" />
+                                    <div class="form-group">
+                                        <label class="form-heading">Last Name*</label>
+                                        <div class="form-input">
+                                            <input type="text" class="input-field" placeholder="Last Name*" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-heading">Email*</label>
-                                    <div class="form-input">
-                                        <input type="text" class="input-field" placeholder="Email*" />
+                                    <div class="form-group">
+                                        <label class="form-heading">Email*</label>
+                                        <div class="form-input">
+                                            <input type="text" class="input-field" placeholder="Email*" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-heading">Password*</label>
-                                    <div class="form-input">
-                                        <input type="text" class="input-field" placeholder="Password*" />
+                                    <div class="form-group">
+                                        <label class="form-heading">Password*</label>
+                                        <div class="form-input">
+                                            <input type="text" class="input-field" placeholder="Password*" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-heading">Address Line 1*</label>
-                                    <div class="form-input">
-                                        <input type="text" class="input-field" placeholder="Address Line 1*" />
+                                    <div class="form-group">
+                                        <label class="form-heading">Address Line 1*</label>
+                                        <div class="form-input">
+                                            <input type="text" class="input-field" placeholder="Address Line 1*" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-heading">Address Line 2*</label>
-                                    <div class="form-input">
-                                        <input type="text" class="input-field" placeholder="Address Line 2*" />
+                                    <div class="form-group">
+                                        <label class="form-heading">Address Line 2*</label>
+                                        <div class="form-input">
+                                            <input type="text" class="input-field" placeholder="Address Line 2*" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-heading">City*</label>
-                                    <div class="form-input">
-                                        <input type="text" class="input-field" placeholder="City*" />
+                                    <div class="form-group">
+                                        <label class="form-heading">City*</label>
+                                        <div class="form-input">
+                                            <input type="text" class="input-field" placeholder="City*" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-heading">State*</label>
-                                    <div class="filter-select">
-                                        <select>
-                                            <option>Alabama</option>
-                                            <option>Louisiana</option>
-                                            <option>Alaska</option>
-                                            <option>Arizona</option>
-                                            <option>California</option>
-                                            <option>Hawaii</option>
-                                        </select>
-                                        <div class="select-icon">
-                                            <img src="images/down.png">
+                                    <div class="form-group">
+                                        <label class="form-heading">State*</label>
+                                        <div class="filter-select">
+                                            <select>
+                                                <option>Alabama</option>
+                                                <option>Louisiana</option>
+                                                <option>Alaska</option>
+                                                <option>Arizona</option>
+                                                <option>California</option>
+                                                <option>Hawaii</option>
+                                            </select>
+                                            <div class="select-icon">
+                                                <img src="images/down.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-heading">Zip Code*</label>
+                                        <div class="form-input">
+                                            <input type="text" class="input-field" placeholder="Zip Code*" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-heading">Mobile Number*</label>
+                                        <div class="form-input">
+                                            <input type="text" class="input-field" placeholder="Mobile Number*" />
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label class="form-heading">Zip Code*</label>
-                                    <div class="form-input">
-                                        <input type="text" class="input-field" placeholder="Zip Code*" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-heading">Mobile Number*</label>
-                                    <div class="form-input">
-                                        <input type="text" class="input-field" placeholder="Mobile Number*" />
-                                    </div>
-                                </div>
                             </div>
-                            <div class="property-detail" style="display: none;">
+                            <div id="PropertyDetails" class="property-detail "  style="display: none;">
                                 <div class="form-inner">
                                     <div class="form-group w-100">
                                         <label class="form-heading">Property Name</label>
@@ -1243,25 +1245,68 @@
                                     <button class="btn primary-btn">Add Property</button>
                                 </div>
                             </div>
-                            <div class="unit-details"  style="display: none;">
+                            <div id="UnitDetails" class="unit-details "  style="display: none;">
                                 <div class="accordion" id="accordionExample">
                                     <div class="accordion-item">
                                         <div class="accordion-header">
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                                 data-bs-target="#collapseOne" aria-expanded="true"
                                                 aria-controls="collapseOne">
-                                                Community rooms
+                                                Property 1
                                             </button>
                                         </div>
                                         <div id="collapseOne" class="accordion-collapse collapse show"
                                             data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
-                                                <ul>
-                                                    <li>Bocce court</li>
-                                                    <li>Multi-Purpose sports court</li>
-                                                    <li>Other sports court</li>
-                                                    <li>Volleyball court</li>
-                                                </ul>
+                                                <div class="form-inner">
+                                                    <div class="form-group">
+                                                        <label class="form-heading">Unit Number*</label>
+                                                        <div class="form-input">
+                                                            <input type="text" class="input-field"
+                                                                placeholder="Unit Number*" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="form-heading">Bedroom</label>
+                                                        <div class="form-input">
+                                                            <input type="text" class="input-field"
+                                                                placeholder="Bedroom" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="form-heading">Bathroom</label>
+                                                        <div class="form-input">
+                                                            <input type="text" class="input-field"
+                                                                placeholder="Bathroom" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="form-heading">Square Feet</label>
+                                                        <div class="form-input">
+                                                            <input type="text" class="input-field"
+                                                                placeholder="Square Feet" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="form-heading">Market Rent*</label>
+                                                        <div class="form-input">
+                                                            <input type="text" class="input-field"
+                                                                placeholder="Market Rent*" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="form-heading">Unit Status*</label>
+                                                        <div class="filter-select">
+                                                            <select>
+                                                                <option>Normal</option>
+                                                                <option>Construction</option>
+                                                            </select>
+                                                            <div class="select-icon">
+                                                                <img src="images/down.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1270,41 +1315,67 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                                 aria-expanded="false" aria-controls="collapseTwo">
-                                                Fitness & sports
+                                                Property Test
                                             </button>
                                         </div>
                                         <div id="collapseTwo" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
-                                                <ul>
-                                                    <li>Bocce court</li>
-                                                    <li>Multi-Purpose sports court</li>
-                                                    <li>Other sports court</li>
-                                                    <li>Volleyball court</li>
-                                                </ul>
+                                                <div class="form-inner">
+                                                    <div class="form-group">
+                                                        <label class="form-heading">Unit Number*</label>
+                                                        <div class="form-input">
+                                                            <input type="text" class="input-field"
+                                                                placeholder="Unit Number*" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="form-heading">Bedroom</label>
+                                                        <div class="form-input">
+                                                            <input type="text" class="input-field"
+                                                                placeholder="Bedroom" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="form-heading">Bathroom</label>
+                                                        <div class="form-input">
+                                                            <input type="text" class="input-field"
+                                                                placeholder="Bathroom" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="form-heading">Square Feet</label>
+                                                        <div class="form-input">
+                                                            <input type="text" class="input-field"
+                                                                placeholder="Square Feet" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="form-heading">Market Rent*</label>
+                                                        <div class="form-input">
+                                                            <input type="text" class="input-field"
+                                                                placeholder="Market Rent*" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="form-heading">Unit Status*</label>
+                                                        <div class="filter-select">
+                                                            <select>
+                                                                <option>Normal</option>
+                                                                <option>Construction</option>
+                                                            </select>
+                                                            <div class="select-icon">
+                                                                <img src="images/down.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="accordion-item">
-                                        <div class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                                aria-expanded="false" aria-controls="collapseThree">
-                                                Services & facilities
-                                            </button>
-                                        </div>
-                                        <div id="collapseThree" class="accordion-collapse collapse"
-                                            data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Bocce court</li>
-                                                    <li>Multi-Purpose sports court</li>
-                                                    <li>Other sports court</li>
-                                                    <li>Volleyball court</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+                                </div>
+                                <div class="add-btn">
+                                    <button class="btn primary-btn">Add Property</button>
                                 </div>
                             </div>
                         </div>
