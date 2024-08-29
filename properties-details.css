@@ -124,6 +124,10 @@ header nav ul li .nav-link{
     transition: color .2s ease-out;
 }
 
+header nav ul li .nav-link.landlord-text{
+    color: #007CBA;
+ }
+
 header nav ul li.login-btn{
     margin-right: 0;
 }
