@@ -88,6 +88,10 @@ header{
     top: 0;
 }
 
+header .logo{
+    height: 40px;
+}
+
 header .logo img{
     height: 100%;
     width: 100%;
@@ -169,7 +173,7 @@ footer .footer-container .footer-inner{
 }
 
 footer .footer-container .footer-inner .footer-content .footer-image{
-    height: 51px;
+    height: 40px;
     margin: 0 0 27px;
 }
 
