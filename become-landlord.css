@@ -80,8 +80,10 @@ header{
     background-color: #fff;
     z-index: 100;
     padding: 0 80px;
-    position: sticky;
-    top: 0;
+}
+
+header .logo{
+    height: 40px;
 }
 
 header .logo img{
@@ -165,7 +167,7 @@ footer .footer-container .footer-inner{
 }
 
 footer .footer-container .footer-inner .footer-content .footer-image{
-    height: 51px;
+    height: 40px;
     margin: 0 0 27px;
 }
 
